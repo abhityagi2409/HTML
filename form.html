@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script type="text/javascript">
+        
+function form_validation()
+{
+    var na_me=document.getElementById("name").value;
+    var gen_der=document.getElementById("gen").value;
+    var date_of_birth=document.getElementById("dob").value;
+    var da_te=document.getElementById("date").value;
+    var contact_number=document.getElementById("contact").value;
+    var e_mail=document.getElementById("email").value;
+    if(na_me=="" || gen_der=="" || date_of_birth=="" || da_te=="" || contact_number=="" || e_mail=="") 
+    {
+        alert("All Fields Must Be Filled !!");
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+  </script>
+
+<style>
+    body{
+        background-image: url("hospital.jpg");
+        background-size: cover;
+    }
+</style>
+    <link href='homecss.css' rel='stylesheet'>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li>
+            <a>About</a>
+                <ul>
+                    <li><a href="about.html">Our Team</a></li>
+                    <li><a href="imagegallary.html">Pictures</a></li>
+               </ul>
+        </li>
+        <li>
+            <a href="website_with_contactsecn.html">Feedback</a>
+               
+        </li>
+        <li>
+            <a href="doctor%20profile.html">Patient Services</a>
+               
+        </li>
+        <li>
+            <a>Contact</a>
+                <ul>
+                    <li><a href="location.html">Map</a></li>
+                </ul>
+        </li>
+        
+        <li>
+            
+            <a href="signinpage.html">Login</a><br>
+        </li>
+    </ul>
+</head>
+
+<title>REQUEST APPOINTMENT</title>
+</head>
+<body>
+<center>
+<h1>REQUEST APPOINTMENT</h1>
+<hr>
+<form action="validation3.html" method="get" onsubmit="return form_validation();">
+<table>
+<tr>
+<th align="left">PATIENT'S NAME</th>
+<td align="right"><input type="text" id="name"></td>
+</tr>
+
+<tr>
+<th align="left">GENDER</th>
+<td align="right"><input type="radio" name="gender">M
+    <input type="radio" name="gender" id="gen">F</td>
+</tr>
+
+<tr>
+<th align="left">PATIENT'S DOB</th>
+<td align="right"><input type="date" name="patient" id="dob"></td>
+</tr>
+
+<tr>
+<th align="left">APPOINTMENT DATE</th>
+<td align="right"><input type="date" name="appointment" id="date"></td>
+</tr>
+
+<tr>
+<th align="left">APPOINTMENT TIME</th>
+<td align="right">
+<select>
+<option>Appointment Time</option>
+<option>9:00 am to 10:00 am</option>
+<option>3:00 pm to 4:00 pm</option>
+<option>7:00 pm to 8:00 pm</option>
+</select>
+</td>
+</tr>
+    
+<tr>
+<th align="left">CITY</th>
+<td align="right">
+<select>
+<option>CITY</option>
+<option>DELHI</option>
+<option>GOA</option>
+<option>HYDERABAD</option>
+<option>CHENNAI</option>
+<option>GURGAON</option>
+</td>
+</tr>
+
+<tr>
+<th align="left">CONTACT NUMBER</th>
+<td align="right"><input type="text" id="contact"></td>
+</tr>
+
+<tr>
+<th align="left">E-MAIL</th>
+<td align="right"><input type="text" id="email"></td>
+</tr>
+
+<tr>
+<a href="validation3.html"> <td align="right"><input type="submit"  value="REGISTER"></a></td>
+<td><input type="reset"></td>
+</tr>
+</table>
+</form>
+    <section id="home-text-4">
+			  <h1>Lovely Professional University.</h1>
+         <img src="logo-media.png">  
+				<p>
+					India's Largest University* Lovely Professional University, Jalandhar-Delhi, G.T. Road, Phagwara, Punjab (INDIA) -144411.
+                    Website: http://www.lpu.in
+                    Tel: +91-1824-404404 
+Toll Free: 1800 102 4431
+				</p>
+				
+			</section>
+   
+
+		<!-- Footer -->
+		<footer>
+			<small>&copy; 2018 Uni Hospital Co. All Rights Reserved</small>
+		</footer>
+
+
+</body>
+</html>

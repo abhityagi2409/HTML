@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+  function form_validation()
+{
+    var f_name=document.getElementById("fname").value;
+    var l_name=document.getElementById("lname").value;
+    var hostel=document.getElementById("HOSTEL").value;
+    var sub_ject=document.getElementById("subject").value;
+    if(f_name=="" || l_name=="" || hostel=="" || sub_ject=="") 
+    {
+        alert("All Fields Must Be Filled !!");
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+  </script>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+</style>
+
+<title>   </title>
+<link href='homecss.css' rel='stylesheet'>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li>
+            <a>About</a>
+                <ul>
+                    <li><a href="about.html">Our Team</a></li>
+                    <li><a href="imagegallary.html">Pictures</a></li>
+               </ul>
+        </li>
+        <li>
+            <a href="website_with_contactsecn.html">Feedback</a>
+               
+        </li>
+        <li>
+            <a href="doctor%20profile.html">Patient Services</a>
+               
+        </li>
+        <li>
+            <a>Contact</a>
+                <ul>
+                    <li><a href="location.html">Map</a></li>
+                </ul>
+        </li>
+        
+        <li>
+            
+            <a href="signinpage.html">Login</a><br>
+        </li>
+    </ul>
+
+    </head>    
+<body>
+
+    
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div id="map" style="width:100%;height:500px"></div>
+    </div>
+    <div class="column">
+      <form action="validation1.html" onsubmit="return form_validation()">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="HOSTEL">HOSTEL</label>
+        <select id="HOSTEL" name="HOSTEL">
+            <option value="BH1">BH1</option>
+          <option value="BH2">BH2</option>
+          <option value="BH3">BH3</option>
+          <option value="BH4">BH4</option>
+            <option value="BH5">BH5</option>
+            <option value="BH6">BH6</option>
+            <option value="BH7">BH7</option>
+            <option value="BH8">BH8</option>
+            <option value="GH1">GH1</option>
+            <option value="GH2">GH2</option>
+            <option value="GH3">GH3</option>
+            <option value="GH4">GH4</option>
+            <option value="GH5">GH5</option>
+            <option value="GH6">GH6</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <a href="validation1.html"> <input type="submit" value="Submit"></a>
+      </form>
+    </div>
+  </div>
+</div>
+<section id="home-text-4">
+			  <h1>Lovely Professional University.</h1>
+         <img src="logo-media.png">  
+				<p>
+					India's Largest University* Lovely Professional University, Jalandhar-Delhi, G.T. Road, Phagwara, Punjab (INDIA) -144411.
+                    Website: http://www.lpu.in
+                    Tel: +91-1824-404404 
+Toll Free: 1800 102 4431
+				</p>
+				
+			</section>
+   
+
+		<!-- Footer -->
+		<footer>
+			<small>&copy; 2018 Uni Hospital Co. All Rights Reserved</small>
+		</footer>
+
+
+
+</body>
+</html>
